@@ -1,16 +1,4 @@
 services:
-  # PostgreSQL Database
-  - type: pserv
-    name: calendar-organizer-db
-    env: docker
-    region: oregon
-    plan: free
-    envVars:
-      - key: POSTGRES_DB
-        value: calendar_organizer
-      - key: POSTGRES_USER
-        value: calendar_user
-
   # Backend Web Service
   - type: web
     name: calendar-organizer-backend
